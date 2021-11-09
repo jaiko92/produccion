@@ -24,9 +24,9 @@ function fw_index()
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
+                                <th scope="col">Insumos</th>
+                                <th scope="col">cantidad</th>
+                                <th scope="col">unidad</th>
                             </tr>
                         </thead>
                         <tbody>
