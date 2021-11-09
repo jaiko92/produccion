@@ -8,7 +8,7 @@
 ?>
             <div class=" shadow mb-4">
                 <div class="card-header flex py-3">
-                    <a href="#" class=" ml-5 btn btn-primary">Nueva Produccion</a>
+                    <a href="#" onclick="production_create()" class=" ml-5 btn btn-primary">Nueva Produccion</a>
                 </div>
                 <div class="card-body">
                     <table class="table">

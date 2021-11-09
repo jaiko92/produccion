@@ -9,9 +9,9 @@
  */
 
  // menu TPV items --------------------------------------------------------------------
-add_action('admin_menu','fw_add_menu');
+add_action('admin_menu','rm_add_menu');
 
-function fw_add_menu() {
+function rm_add_menu() {
   
   //MENU TPV
   add_menu_page('Produccion', //page title

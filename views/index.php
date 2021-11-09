@@ -22,6 +22,7 @@ function fw_index()
     <script src="<?php echo WP_PLUGIN_URL; ?>/produccion/resources/MDB/js/jquery-2.0.0.min.js"></script>
     
     <script>
+        $('#mitabla').html("<center><img class='img-sm' src='<?php echo WP_PLUGIN_URL; ?>/produccion/resources/reload.gif'></center>");
         $.ajax({
             url: "<?php echo WP_PLUGIN_URL; ?>/produccion/views/production_list.php",
             dataType: 'html',
@@ -30,6 +31,17 @@ function fw_index()
                 $('#mitabla').html(response);	
             }
         });
+        function production_create() {
+            $('#mitabla').html("<center><img class='img-sm' src='<?php echo WP_PLUGIN_URL; ?>/produccion/resources/reload.gif'></center>");
+            $.ajax({
+                url: "<?php echo WP_PLUGIN_URL; ?>/produccion/views/production_create.php",
+                dataType: 'html',
+                contentType: 'text/html',
+                success: function (response) {
+                    $('#mitabla').html(response);	
+                }
+            });
+        }
     </script>
 <?php
 
