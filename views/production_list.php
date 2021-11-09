@@ -1,12 +1,11 @@
 <?php
     require_once('../../../../wp-load.php');
     $args = array(
-        'post_type'  => 'fw_productions',
+        'post_type'  => 'product',
 
     );
     $postslist = get_posts($args);
 ?>
-
             <div class=" shadow mb-4">
                 <div class="card-header flex py-3">
                     <a href="#" class=" ml-5 btn btn-primary">Nueva Produccion</a>

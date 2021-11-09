@@ -11,41 +11,26 @@ function fw_index()
 
 ?>
     <link type="text/css" href="<?php echo WP_PLUGIN_URL; ?>/produccion/resources/MDB/css/mdb.min.css" rel="stylesheet">
-    <div class="mt-5">
+  
         <div class="container-fluid">
-            <h1 class="h3 mb-4 text-gray-800">Insumos</h1>
+            <h1 class="h3 mb-4 text-gray-800">Producciones</h1>
 
-            <div class=" shadow mb-4">
-                <div class="card-header flex py-3">
-                    <a href="#" class=" ml-5 btn btn-primary">Crear Insumos</a>
-                </div>
-                <div class="card-body">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Insumos</th>
-                                <th scope="col">cantidad</th>
-                                <th scope="col">unidad</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php for ($i = 0; $i < count($postslist); $i++) { ?>
-
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td><?php echo $postslist[$i]->post_title; ?> </td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                </tr>
-                            <?php } ?>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+            <div id="mitabla"></div>
         </div>
-    </div>
+   
     <script src="<?php echo WP_PLUGIN_URL; ?>/produccion/resources/MDB/js/mdb.min.js"></script>
+    <script src="<?php echo WP_PLUGIN_URL; ?>/produccion/resources/MDB/js/jquery-2.0.0.min.js"></script>
+    
+    <script>
+        $.ajax({
+            url: "<?php echo WP_PLUGIN_URL; ?>/produccion/views/production_list.php",
+            dataType: 'html',
+            contentType: 'text/html',
+            success: function (response) {
+                $('#mitabla').html(response);	
+            }
+        });
+    </script>
 <?php
 
 }
