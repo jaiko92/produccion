@@ -1,16 +1,16 @@
 <?php
 
-function lw_pos()
+function fw_index()
 {
     $args = array(
-        'post_type'  => 'product',
+        'post_type'  => 'fw_productions',
 
     );
     $postslist = get_posts($args);
 
 
 ?>
-    <link type="text/css" href="<?php echo WP_PLUGIN_URL; ?>/fatcom-wp/Resources/MDB/css/mdb.min.css" rel="stylesheet">
+    <link type="text/css" href="<?php echo WP_PLUGIN_URL; ?>/produccion/resources/MDB/css/mdb.min.css" rel="stylesheet">
     <div class="mt-5">
         <div class="container-fluid">
             <h1 class="h3 mb-4 text-gray-800">Insumos</h1>
@@ -45,7 +45,7 @@ function lw_pos()
             </div>
         </div>
     </div>
-    <script src="<?php echo WP_PLUGIN_URL; ?>/fatcom-wp/Resources/MDB/js/mdb.min.js"></script>
+    <script src="<?php echo WP_PLUGIN_URL; ?>/produccion/resources/MDB/js/mdb.min.js"></script>
 <?php
 
 }
