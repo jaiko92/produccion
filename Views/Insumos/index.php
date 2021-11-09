@@ -1,6 +1,6 @@
 <?php
 
-function lw_pos()
+function pd_pos()
 {
     $args = array(
         'post_type'  => 'product',
@@ -10,7 +10,7 @@ function lw_pos()
 
 
 ?>
-    <link type="text/css" href="<?php echo WP_PLUGIN_URL; ?>/fatcom-wp/Resources/MDB/css/mdb.min.css" rel="stylesheet">
+    <link type="text/css" href="<?php echo WP_PLUGIN_URL; ?>/produccion/Resources/MDB/css/mdb.min.css" rel="stylesheet">
     <div class="mt-5">
         <div class="container-fluid">
             <h1 class="h3 mb-4 text-gray-800">Insumos</h1>
@@ -24,9 +24,9 @@ function lw_pos()
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
+                                <th scope="col">Insumos</th>
+                                <th scope="col">cantidad</th>
+                                <th scope="col">unidad</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -45,7 +45,7 @@ function lw_pos()
             </div>
         </div>
     </div>
-    <script src="<?php echo WP_PLUGIN_URL; ?>/fatcom-wp/Resources/MDB/js/mdb.min.js"></script>
+    <script src="<?php echo WP_PLUGIN_URL; ?>/produccion/Resources/MDB/js/mdb.min.js"></script>
 <?php
 
 }
